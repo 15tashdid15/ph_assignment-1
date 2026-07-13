@@ -261,3 +261,123 @@ img {
 
 
 }
+
+
+
+
+.speakers {
+
+    background-color: #ffffff;
+
+}
+
+
+.speakers h2 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.speaker-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+}
+
+
+.speaker-card {
+
+    background-color: #ffffff;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.speaker-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.speaker-card img {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+}
+
+
+.speaker-card span {
+
+    display: inline-block;
+
+    margin: 20px 20px 10px;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background-color: #eff6ff;
+
+    color: var(--primary-color);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.speaker-card h3 {
+
+    margin: 0 20px 8px;
+
+    font-size: 22px;
+
+}
+
+
+.speaker-card p {
+
+    margin: 0 20px 25px;
+
+    color: var(--secondary-text);
+
+    font-size: 15px;
+
+}
+
+
+@media (max-width: 700px) {
+
+
+    .speaker-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
