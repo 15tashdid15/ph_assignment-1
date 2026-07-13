@@ -7,3 +7,12 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.container {
+    width: min(90%, 1320px);
+    margin-inline: auto;
+}
+
+section {
+    padding: 80px 0;
+}
